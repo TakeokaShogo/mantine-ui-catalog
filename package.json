@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --dir src",
+    "lint:fix": "yarn lint --fix",
+    "export": "next export",
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -20,7 +23,9 @@
     "@types/react-dom": "18.2.4",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
-    "next": "13.4.4",
+    "eslint-config-prettier": "^8.8.0",
+    "next": "12.3.4",
+    "prettier": "^2.8.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.3"

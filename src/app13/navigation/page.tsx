@@ -1,3 +1,4 @@
+'use client';
 import { Anchor, Container, Breadcrumbs, Burger, Box, NavLink, Badge, Pagination, Stepper, Tabs } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconHome2, IconGauge, IconChevronRight, IconCircleOff, IconActivity, IconPhoto, IconMessageCircle, IconSettings } from "@tabler/icons-react";
