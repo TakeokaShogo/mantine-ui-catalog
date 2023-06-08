@@ -62,23 +62,20 @@ export default function Demo() {
       <Group>
         <Button onClick={dialogObj.toggle}>Toggle dialog</Button>
       </Group>
-
       <Dialog opened={openedDialog} withCloseButton onClose={dialogObj.close} size='lg' radius='md'>
         <Text size='sm' mb='xs' weight={500}>
           Subscribe to email newsletter
         </Text>
-
         <Group align='flex-end'>
           <TextInput placeholder='hello@gluesticker.com' sx={{ flex: 1 }} />
           <Button onClick={dialogObj.close}>Subscribe</Button>
         </Group>
       </Dialog>
 
+      <h2>Drawer</h2>
       <Drawer opened={openedDrawer} onClose={drawerObj.close} title='This is Drawer.'>
         {/* Drawer content */}
       </Drawer>
-
-      <h2>Drawer</h2>
       <Group>
         <Button onClick={drawerObj.open}>Open Drawer</Button>
       </Group>
@@ -108,7 +105,6 @@ export default function Demo() {
           <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
         </Box>
       </Box>
-
       <Group>
         <Button onClick={loadingObj.toggle}>Toggle LoadingOverlay</Button>
       </Group>
@@ -118,7 +114,6 @@ export default function Demo() {
         <Menu.Target>
           <Button>Toggle menu</Button>
         </Menu.Target>
-
         <Menu.Dropdown>
           <Menu.Label>Application</Menu.Label>
           <Menu.Item icon={<IconSettings size={14} />}>Settings</Menu.Item>
@@ -134,9 +129,7 @@ export default function Demo() {
           >
             Search
           </Menu.Item>
-
           <Menu.Divider />
-
           <Menu.Label>Danger zone</Menu.Label>
           <Menu.Item icon={<IconArrowsLeftRight size={14} />}>Transfer my data</Menu.Item>
           <Menu.Item color='red' icon={<IconTrash size={14} />}>
@@ -149,7 +142,6 @@ export default function Demo() {
       <Modal opened={openedModal} onClose={modalObj.close} title='This is Modal'>
         {/* Modal content */}
       </Modal>
-
       <Group>
         <Button onClick={modalObj.open}>Open modal</Button>
       </Group>
