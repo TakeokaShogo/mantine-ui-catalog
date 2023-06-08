@@ -1,3 +1,4 @@
+'use client';
 import { Container, Affix, rem, Transition, Button, Group, Dialog, TextInput, Drawer, HoverCard, Box, LoadingOverlay, Text, Menu, Modal, AspectRatio, Overlay, Popover, Tooltip, Image } from "@mantine/core";
 import { useWindowScroll, useDisclosure } from "@mantine/hooks";
 import { IconArrowUp, IconArrowsLeftRight, IconMessageCircle, IconPhoto, IconSearch, IconSettings, IconTrash } from "@tabler/icons-react";

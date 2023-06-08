@@ -1,3 +1,5 @@
+
+'use client';
 import { Image, useMantineTheme, ColorSwatch, Container, Accordion, Avatar, Box, BackgroundImage, Center, Badge, Card, Group, Button, Indicator, Kbd, Spoiler, ThemeIcon, Timeline, Text } from "@mantine/core";
 import { IconStar, IconPhoto, IconGitBranch, IconGitCommit, IconGitPullRequest, IconMessageDots } from "@tabler/icons-react";
 
@@ -120,7 +122,9 @@ export default function Demo() {
     <h2>Spoiler</h2>
     <Spoiler maxHeight={70} showLabel="Show more" hideLabel="Hide">
       {/* Content here */}
-      We Butter the Bread with Butter was founded in 2007 by Marcel Neumann, who was originally guitarist for Martin Kesici's band, and Tobias Schultka. The band was originally meant as a joke, but progressed into being a more serious musical duo. The name for the band has no particular meaning, although its origins were suggested from when the two original members were driving in a car operated by Marcel Neumann and an accident almost occurred. Neumann found Schultka "so funny that he briefly lost control of the vehicle.
+      We Butter the Bread with Butter was founded in 2007 by Marcel Neumann, who was originallyguitarist for Martin Kesicis band, and Tobias Schultka. The band was originally meant as a joke, but progressed into being a more serious musical duo. The name for the band has no particular 
+      meaning, although its origins were suggested from when the two original members were driving in a car operated by Marcel Neumann and an accident almost occurred. Neumann found Schultka
+      so funny that he briefly lost control of the vehicle.
        Many of their songs from this point were covers of German folk tales and nursery rhymes.
     </Spoiler>
 
