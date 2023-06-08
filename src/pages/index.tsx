@@ -1,24 +1,37 @@
-import { AppShell, Navbar, Header, Footer, Aside } from '@mantine/core';
+import { Container, Space, Text, Title } from '@mantine/core'
+import Link from 'next/link'
 
 export default function Demo() {
   return (
-    <AppShell
-      padding="md"
-      navbar={<Navbar width={{ base: 300 }} height={500} p="xs"
-      sx={{backgroundColor: "pink"}}
-      >{
-        /* Navbar content */
-        "Navbar"
-        }</Navbar>}
-      header={<Header height={60} p="xs" sx={{backgroundColor: "lightblue"}}>{"Header"}</Header>}
-      footer={<Footer height={70} sx={{backgroundColor: "yellow"}}>{"Footer"}</Footer>}
-      aside={<Aside width={{ base: 300 }} height={500} p="xs" sx={{backgroundColor: "lightgreen"}}>{"Aside"}</Aside>}
-      styles={(theme) => ({
-        main: { backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0] },
-      })}
-    >
-      {/* Your application here */}
-      {"content"}
-    </AppShell>
-  );
+    <>
+      <Container size='xs' px='xs' py='xl'>
+        <Title>Mantine UI Catalog</Title>
+        <Space h='md'></Space>
+        <Text>
+          <Link href='/core/buttons'>Buttons</Link>
+        </Text>
+        <Text>
+          <Link href='/core/data-display'>Data Display</Link>
+        </Text>
+        <Text>
+          <Link href='/core/feedback'>Feedback</Link>
+        </Text>
+        <Text>
+          <Link href='/core/inputs'>Inputs</Link>
+        </Text>
+        <Text>
+          <Link href='/core/miscellaneous'>Miscellaneous</Link>
+        </Text>
+        <Text>
+          <Link href='/core/navigation'>Navigation</Link>
+        </Text>
+        <Text>
+          <Link href='/core/overlays'>Overlays</Link>
+        </Text>
+        <Text>
+          <Link href='/core/typography'>Typography</Link>
+        </Text>
+      </Container>
+    </>
+  )
 }
