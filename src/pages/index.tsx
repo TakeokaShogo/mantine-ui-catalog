@@ -7,7 +7,7 @@ export default function Demo() {
       <Container size='xs' px='xs' py='xl'>
         <Title color='blue.5'>Mantine UI Catalog</Title>
         <Space h='md'></Space>
-        <Stack spacing={0}>
+        <Stack spacing={0} align='flex-start'>
           <LinkButton href='/core/layout'>Layout</LinkButton>
           <Group>
             <Box ml='1rem'>|--</Box>

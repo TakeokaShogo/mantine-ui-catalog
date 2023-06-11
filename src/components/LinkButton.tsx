@@ -16,7 +16,16 @@ export default function LinkButton(props: iconButtonLinkProps) {
         {/* <ThemeIcon variant='light' color='gray' size='md'>
             {resizedIcon}
           </ThemeIcon> */}
-        <Text color='teal.6'>{props.children}</Text>
+        <Text
+          color='teal.6'
+          sx={(theme) => ({
+            '&:hover': {
+              color: theme.colors.teal[9],
+            },
+          })}
+        >
+          {props.children}
+        </Text>
       </UnstyledButton>
     </Link>
   )
