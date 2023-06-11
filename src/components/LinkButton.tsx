@@ -12,22 +12,11 @@ export default function LinkButton(props: iconButtonLinkProps) {
   // const resizedIcon = React.cloneElement(props.icon, { size: '1rem' })
   return (
     <Link href={props.href}>
-      <UnstyledButton
-        sx={(theme) => ({
-          // backgroundColor: theme.colors.gray[0],
-          borderRadius: theme.radius.sm,
-          '&:hover': {
-            backgroundColor: theme.colors.gray[2],
-          },
-        })}
-        w='100%'
-        px='md'
-        py='0.3rem'
-      >
+      <UnstyledButton py='0.3rem'>
         {/* <ThemeIcon variant='light' color='gray' size='md'>
             {resizedIcon}
           </ThemeIcon> */}
-        <Text color='gray.6'>{props.children}</Text>
+        <Text color='teal.6'>{props.children}</Text>
       </UnstyledButton>
     </Link>
   )
