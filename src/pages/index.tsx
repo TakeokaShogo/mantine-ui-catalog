@@ -1,12 +1,18 @@
-import { Container, Space, Button, Title, Text, Group, Box, Stack } from '@mantine/core'
+import { Container, Space, Title, Group, Box, Stack } from '@mantine/core'
 import LinkButton from '@/components/LinkButton'
+import Head from 'next/head'
 
-export default function Demo() {
+export default function Page() {
   return (
     <>
+      <Head>
+        <title>Top Page</title>
+      </Head>
+
       <Container size='xs' px='xs' py='xl'>
-        <Title color='blue.5'>Mantine UI Catalog</Title>
+        <Title>Mantine UI Catalog</Title>
         <Space h='md'></Space>
+        <Title order={2}>Core</Title>
         <Stack spacing={0} align='flex-start'>
           <LinkButton href='/core/layout'>Layout</LinkButton>
           <Group>

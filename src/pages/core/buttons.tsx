@@ -12,12 +12,16 @@ import {
 } from '@mantine/core'
 import { useState } from 'react'
 import { IconSettings } from '@tabler/icons-react'
+import Head from 'next/head'
 
-export default function Demo() {
+export default function Page() {
   const [file, setFile] = useState<File | null>(null)
 
   return (
     <>
+      <Head>
+        <title>Buttons</title>
+      </Head>
       <Container size='xs' px='xs' py='xl'>
         <h2>Action Icon</h2>
         <Group>

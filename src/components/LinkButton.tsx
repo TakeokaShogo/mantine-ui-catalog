@@ -17,10 +17,10 @@ export default function LinkButton(props: iconButtonLinkProps) {
             {resizedIcon}
           </ThemeIcon> */}
         <Text
-          color='teal.6'
+          color='blue.5'
           sx={(theme) => ({
             '&:hover': {
-              color: theme.colors.teal[9],
+              color: theme.colors.blue[9],
             },
           })}
         >
